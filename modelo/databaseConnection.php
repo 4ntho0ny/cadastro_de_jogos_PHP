@@ -3,7 +3,7 @@
         private const DATABASE = "Jogos";
         private const DSN = "mysql:host=localhost;dbname="; //DataBase Server Name
         private const USER = "root";
-        private const PASSWORD = "Anthony@761613";
+        private const PASSWORD = "Your Password";
         
         function getConstants() {
             $reflectionClass = new ReflectionClass($this);
