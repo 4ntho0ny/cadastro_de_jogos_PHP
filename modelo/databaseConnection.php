@@ -3,7 +3,7 @@
         private const DATABASE = "Jogos";
         private const DSN = "mysql:host=localhost;dbname="; //DataBase Server Name
         private const USER = "root";
-        private const PASSWORD = "Anthony@761613";
+        private const PASSWORD = "Your password";
         
         function getConstants() {
             $reflectionClass = new ReflectionClass($this);
@@ -22,7 +22,6 @@
                 // PDO Connection
                 $pdo = new PDO($dsn.$db, $user, $password);
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                echo "It's work!";
             } catch (PDOException $e) {
                 die($e->getMessage());
             }
